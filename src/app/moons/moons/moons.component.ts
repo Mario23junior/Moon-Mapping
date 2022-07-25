@@ -11,14 +11,14 @@ import { MoonsService } from '../services/moons.service';
 export class MoonsComponent implements OnInit {
 
   private moonsService: MoonsService
+  public moons$: Observable<Moon[]>
 
-  moons: Observable<Moon[]>
   displayedColumns = ['name', 'planetaMae', 'semieixoMaior', 'pressaoAtmosferica', 'massa',
-   'periodoDeRotacao', 'periodoOrbital', 'inclinacao', 'velocidadeOrbitalMedia']
+    'periodoDeRotacao', 'periodoOrbital', 'inclinacao', 'velocidadeOrbitalMedia']
 
   constructor(moonsService: MoonsService) {
     this.moonsService = moonsService
-    this.moons = this.moonsService.listAll()
+    this.moons$ = this.moonsService.listAll()
   }
 
   ngOnInit(): void {

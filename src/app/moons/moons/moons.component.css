@@ -25,7 +25,7 @@ table {
   }
   
   .mat-column-demo-weight {
-    font-style: italic;
+    font-style: italsic;
   }
   
   .mat-column-demo-symbol {
@@ -34,3 +34,10 @@ table {
     font-weight: bold;
   }
   
+  .loadin-spiner {
+    padding: 20px;
+    background-color: rgb(117, 117, 117);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
