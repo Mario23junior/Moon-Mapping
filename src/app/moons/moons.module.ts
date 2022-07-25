@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { MoonsRoutingModule } from './moons-routing.module';
 import { MoonsComponent } from './moons/moons.component';
+import { MatTableModule } from '@angular/material/table';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { MoonsComponent } from './moons/moons.component';
   ],
   imports: [
     CommonModule,
-    MoonsRoutingModule
+    MoonsRoutingModule,
+    MatTableModule
   ]
 })
 export class MoonsModule { }

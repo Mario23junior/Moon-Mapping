@@ -1,1 +1,59 @@
-<p>moons works!</p>
+<table mat-table [dataSource]="moons" class="mat-elevation-z8">
+    <!-- Position Column -->
+    <ng-container matColumnDef="name">
+        <th mat-header-cell *matHeaderCellDef> Lua </th>
+        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+    </ng-container>
+
+    <!-- Name Column -->
+    <ng-container matColumnDef="planetaMae">
+        <th mat-header-cell *matHeaderCellDef> Planeta Orbital </th>
+        <td mat-cell *matCellDef="let element"> {{element.planetaMae}} </td>
+    </ng-container>
+
+    <!-- Weight Column -->
+    <ng-container matColumnDef="semieixoMaior">
+        <th mat-header-cell *matHeaderCellDef> Semieixo Maior</th>
+        <td mat-cell *matCellDef="let element"> {{element.semieixoMaior}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="pressaoAtmosferica">
+        <th mat-header-cell *matHeaderCellDef> Pressao Atmosferica </th>
+        <td mat-cell *matCellDef="let element"> {{element.pressaoAtmosferica}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="massa">
+        <th mat-header-cell *matHeaderCellDef> Massa </th>
+        <td mat-cell *matCellDef="let element"> {{element.massa}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="periodoDeRotacao">
+        <th mat-header-cell *matHeaderCellDef> Periodo De Rotacao </th>
+        <td mat-cell *matCellDef="let element"> {{element.periodoDeRotacao}} </td>
+    </ng-container>
+
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="periodoOrbital">
+        <th mat-header-cell *matHeaderCellDef> Periodo Orbital </th>
+        <td mat-cell *matCellDef="let element"> {{element.periodoOrbital}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="inclinacao">
+        <th mat-header-cell *matHeaderCellDef> Inclinação </th>
+        <td mat-cell *matCellDef="let element"> {{element.inclinacao}} </td>
+    </ng-container>
+
+    <!-- Symbol Column -->
+    <ng-container matColumnDef="velocidadeOrbitalMedia">
+        <th mat-header-cell *matHeaderCellDef> velocidade orbital Media </th>
+        <td mat-cell *matCellDef="let element"> {{element.velocidadeOrbitalMedia}} </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
