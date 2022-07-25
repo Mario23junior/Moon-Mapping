@@ -1,3 +1,13 @@
+mat-toolbar {
+  background-color: #979595;
+}
+.logo-secundary {
+  max-height: 70px;
+  margin-bottom:auto;
+}
+table {
+    width: 100%;
+}
 .demo-table {
     width: 100%;
   }
