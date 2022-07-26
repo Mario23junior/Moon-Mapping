@@ -20,7 +20,7 @@ export class MoonsService {
     return this.httpClient.get<Moon[]>(this.API)
       .pipe(
         first(),
-        delay(5000),
+        // delay(5000),
         tap(moons => console.log(moons))
       );
   }

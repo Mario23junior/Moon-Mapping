@@ -10,12 +10,15 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { PlanetsPipe } from './pipes/planets.pipe';
 
 
 @NgModule({
   declarations: [
     MoonsComponent,
-    ErrorDialogComponent
+    ErrorDialogComponent,
+    PlanetsPipe
   ],
   imports: [
     CommonModule,
@@ -25,7 +28,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatToolbarModule,
     MatProgressSpinnerModule,
     MatDialogModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule
   ]
 })
 export class MoonsModule { }

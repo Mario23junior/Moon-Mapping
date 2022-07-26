@@ -41,3 +41,8 @@ table {
     align-items: center;
     justify-content: center;
   }
+
+  .logo-planet {
+    max-height: 3rem;
+    margin-bottom:auto;
+  }

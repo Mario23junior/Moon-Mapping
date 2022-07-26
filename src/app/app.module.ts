@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MoonsModule } from './moons/moons.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -19,8 +20,9 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MatToolbarModule,
     MoonsModule,
-    HttpClientModule
-    
+    HttpClientModule,
+    MatIconModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
