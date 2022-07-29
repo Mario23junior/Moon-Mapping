@@ -12,13 +12,15 @@ import { ErrorDialogComponent } from './error-dialog/error-dialog.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { PlanetsPipe } from './pipes/planets.pipe';
+import { MoonsFormComponent } from './moons-form/moons-form.component';
 
 
 @NgModule({
   declarations: [
     MoonsComponent,
     ErrorDialogComponent,
-    PlanetsPipe
+    PlanetsPipe,
+    MoonsFormComponent
   ],
   imports: [
     CommonModule,
