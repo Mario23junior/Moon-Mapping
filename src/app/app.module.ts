@@ -8,6 +8,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MoonsModule } from './moons/moons.module';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatToolbarModule,
     MoonsModule,
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    MatFormFieldModule,
+    MatInputModule
 
   ],
   providers: [],

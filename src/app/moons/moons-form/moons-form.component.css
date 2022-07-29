@@ -1,0 +1,20 @@
+mat-card {
+    max-width: 40%;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.color-moon{
+    background-color: #917c75;
+    border-radius: 8px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.min-width {
+    width: 100%;
+    min-width: 300px;
+    
+}

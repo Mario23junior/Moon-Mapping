@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-moons-form',
@@ -7,7 +9,32 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MoonsFormComponent implements OnInit {
 
-  constructor() { }
+  public form: FormGroup
+  public router:Router
+
+  constructor(public formBuild: FormBuilder,router:Router) {
+    this.router = router
+    this.form = this.formBuild.group({
+
+      name: [null],
+      planetaMae: [null],
+      semieixoMaior: [null],
+      pressaoAtmosferica: [null],
+      massa: [null],
+      periodoDeRotacao: [null],
+      periodoOrbital: [null],
+      inclinacao: [null],
+      velocidadeOrbitalMedia: [null]
+    })
+  }
+  
+  public onSubmit() {
+
+  }
+
+  public onCancel() {
+     this.router.navigate([''])
+  }
 
   ngOnInit(): void {
   }
