@@ -10,7 +10,7 @@ import { delay, first, take, tap } from 'rxjs';
 export class MoonsService {
 
   private httpClient: HttpClient
-  private readonly API = '/assets/bd.json'
+  private readonly API = '/api/moons'
 
   constructor(httpClient: HttpClient) {
     this.httpClient = httpClient
