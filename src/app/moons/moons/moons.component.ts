@@ -47,6 +47,10 @@ export class MoonsComponent implements OnInit {
     });
   }
 
+  public fontRaiz() {
+    this.router.navigate([''])
+  }
+
   ngOnInit(): void {
   }
 
