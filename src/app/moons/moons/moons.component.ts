@@ -18,7 +18,7 @@ export class MoonsComponent implements OnInit {
 
 
   displayedColumns = ['name', 'planetaMae', 'semieixoMaior', 'pressaoAtmosferica', 'massa',
-    'periodoDeRotacao', 'periodoOrbital', 'inclinacao', 'velocidadeOrbitalMedia']
+    'periodoDeRotacao', 'periodoOrbital', 'inclinacao', 'velocidadeOrbitalMedia','actions']
 
   constructor(moonsService: MoonsService, dialog: MatDialog) {
     this.moonsService = moonsService
