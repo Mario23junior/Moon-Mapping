@@ -4,7 +4,7 @@ mat-card {
     text-align: center;
 }
 
-.color-moon{
+.color-moon {
     background-color: #917c75;
     border-radius: 8px;
 }
@@ -16,5 +16,12 @@ mat-card {
 .min-width {
     width: 100%;
     min-width: 300px;
-    
+
 }
+
+::ng-deep .success{
+     width: 40rem;
+     background:#0be728;
+     color: black
+    ;
+ }
