@@ -14,7 +14,7 @@ export class MoonsService {
 
   constructor(httpClient: HttpClient) {
     this.httpClient = httpClient
-   }
+  }
 
   listAll() {
     return this.httpClient.get<Moon[]>(this.API)
@@ -24,4 +24,12 @@ export class MoonsService {
         tap(moons => console.log(moons))
       );
   }
+
+
+  save(request:Moon) {
+     return this.httpClient.post<Moon>(this.API, request)
+     .pipe(
+      first()
+     )
+    }
 }
