@@ -18,7 +18,6 @@
             <ng-container matColumnDef="planetaMae">
                 <th mat-header-cell *matHeaderCellDef> Planeta orbital </th>
                 <td mat-cell *matCellDef="let element"> {{element.planetaMae}}
-                    <!-- <mat-icon aria-hidden="false" aria-label="Example home icon">{{element.planets | planets}}</mat-icon> -->
                     <a>
                         <img class="logo-planet" src="assets/planets-icon/{{element.planetaMae | planets}}" alt="logo">
                     </a>

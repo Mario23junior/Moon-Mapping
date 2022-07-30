@@ -10,7 +10,20 @@
             </mat-form-field>
 
             <mat-form-field class="full-width">
-                <input matInput placeholder="Planeta que habita a lua" formControlName="planetaMae">
+                <mat-label>Nome do planeta que habita a lua"</mat-label>
+                <mat-select formControlName="planetaMae">
+                    <mat-option value="null"></mat-option>
+                    <mat-option value="Saturno">Saturno</mat-option>
+                    <mat-option value="Marte">Marte</mat-option>
+                    <mat-option value="Jupiter">Jupiter</mat-option>
+                    <mat-option value="Mercurio">Mercurio</mat-option>
+                    <mat-option value="Neturno">Neturno</mat-option>
+                    <mat-option value="Venus">Venus</mat-option>
+                    <mat-option value="Plutão">Plutão</mat-option>
+                    <mat-option value="Terra">Terra</mat-option>
+                    <mat-option value="Urano">Urano</mat-option>
+                    <mat-option value="Sol">Sol</mat-option>
+                </mat-select>
             </mat-form-field>
 
             <mat-form-field class="full-width">
@@ -45,7 +58,7 @@
     </mat-card-content>
     <mat-card-actions>
         <button class="btn" mat-raised-button (click)="onSubmit()" color="primary" aria-label="Editar satelite natural">
-             Salvar
+            Salvar
         </button>
 
         <button class="btn" mat-raised-button (click)="onCancel()" color="warn" aria-label="Remover curso">
