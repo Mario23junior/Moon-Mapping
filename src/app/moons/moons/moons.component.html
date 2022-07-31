@@ -76,7 +76,7 @@
 
 
                 <mat-cell *matCellDef="let element">
-                    <button class="btn" mat-raised-button class="btn-edit" color="primary" aria-label="Editar satelite natural">
+                    <button class="btn" routerLink="/moons-edit/update/{{ element.id }}" mat-raised-button class="btn-edit" color="primary" aria-label="Editar satelite natural">
                         <mat-icon>edit_box</mat-icon>
                     </button>
 

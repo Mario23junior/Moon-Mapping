@@ -32,13 +32,12 @@ export class MoonsService {
       )
   }
 
-  readonly(id:number): Observable<Moon> {
+  readById(id:any): Observable<Moon> {
     const urlId = `${this.API}/${id}`
     return this.httpClient.get<Moon>(urlId)
   }
 
   update(moonsId: Moon): Observable<Moon> {
-    const url = `${this.API}/${moonsId._id}`
-    return this.httpClient.put<Moon>(url, moonsId)
-  }
+    return this.httpClient.put<Moon>(`${this.API}/${moonsId._id}`,moonsId)
+   }
 }

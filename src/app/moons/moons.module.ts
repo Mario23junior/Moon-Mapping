@@ -18,6 +18,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MoonsUpdateComponent } from './moons-update/moons-update.component';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 
 
@@ -26,7 +28,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MoonsComponent,
     ErrorDialogComponent,
     PlanetsPipe,
-    MoonsFormComponent
+    MoonsFormComponent,
+    MoonsUpdateComponent
   ],
   imports: [
     CommonModule,
@@ -42,7 +45,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    MatSnackBarModule
+    MatSnackBarModule,
+    MatGridListModule
   ]
 })
 export class MoonsModule { }
