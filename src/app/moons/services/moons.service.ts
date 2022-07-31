@@ -38,6 +38,6 @@ export class MoonsService {
   }
 
   update(moonsId: Moon): Observable<Moon> {
-    return this.httpClient.put<Moon>(`${this.API}/${moonsId._id}`,moonsId)
+     return this.httpClient.put<Moon>(`${this.API}/${moonsId._id}`,moonsId)
    }
 }

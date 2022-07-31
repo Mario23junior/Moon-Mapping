@@ -33,7 +33,7 @@ export class MoonsUpdateComponent implements OnInit {
       _id: {value: null,disabled:true},
       name: [''],
       planetaMae: [''],
-      semieixoMaior: [''],
+      semieixoMaior: [],
       pressaoAtmosferica: [''],
       massa: [''],
       periodoDeRotacao: [''],
