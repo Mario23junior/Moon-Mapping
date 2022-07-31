@@ -1,5 +1,5 @@
 export interface Moon {
-    _id: number,
+    id: number,
     name: String,
     planetaMae: string
     semieixoMaior: String,

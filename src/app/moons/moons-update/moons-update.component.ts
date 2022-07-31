@@ -30,7 +30,7 @@ export class MoonsUpdateComponent implements OnInit {
     this.location = location
     this.service = service
     this.form = this.formBuild.group({
-      _id: {value: null,disabled:true},
+      _id: { value:null, disabled:true},
       name: [''],
       planetaMae: [''],
       semieixoMaior: [],
@@ -51,13 +51,11 @@ export class MoonsUpdateComponent implements OnInit {
     })
   }
 
-  findById(): void {
-
-  }
   public onUpdate() {
-    this.service.update(this.form.value)
+    this.service.update(this.moons)
       .subscribe(result => this.onSuccess(this.form.value.name),
         error => this.onError());
+        this.location.back()
   }
 
   public onCancel() {
