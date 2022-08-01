@@ -1,27 +1,49 @@
 mat-card {
-    max-width: 40%;
-    margin: 2em auto;
-    text-align: center;
+  max-width: 40%;
+  margin: 2em auto;
+  text-align: center;
 }
 
 .color-moon {
-    background-color: #917c75;
-    border-radius: 8px;
+  background-color: #917c75;
+  border-radius: 8px;
 }
 
 .full-width {
-    width: 100%;
+  width: 100%;
+  margin: 1em auto;
 }
 
 .min-width {
-    width: 100%;
-    min-width: 300px;
+  width: 100%;
+  min-width: 300px;
 
 }
 
 ::ng-deep .success{
-     width: 40rem;
-     background:#0be728;
-     color: black
-    ;
- }
+   width: 40rem;
+   background:#0be728;
+   color: black
+  ;
+}
+
+.container mat-form-field + mat-form-field {
+  margin-left: 8px;
+}
+
+.container mat-form-field {
+  width: 260px;
+}
+
+.container form {
+  margin-bottom: 20px;
+}
+
+.container form {
+  margin: 30px auto;
+}
+
+.container mat-radio-button {
+  margin: 0 32px;
+}
+
