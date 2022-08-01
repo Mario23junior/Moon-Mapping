@@ -59,7 +59,7 @@ export class MoonsUpdateComponent implements OnInit {
   }
 
   public onCancel() {
-    this.location.back()
+    this.router.navigate([''])
   }
 
   private onError() {
@@ -79,6 +79,6 @@ export class MoonsUpdateComponent implements OnInit {
       verticalPosition: 'top',
       panelClass: ['success'],
     })
-    this.location.back()
+    this.router.navigate([''])
   }
 }

@@ -48,7 +48,7 @@ export class MoonsFormComponent implements OnInit {
   }
 
   public onCancel() {
-    this.location.back()
+    this.router.navigate([''])
   }
 
   private onError() {
@@ -68,7 +68,8 @@ export class MoonsFormComponent implements OnInit {
       verticalPosition: 'top',
        panelClass: ['success'],
     })
-    this.location.back()
+    this.router.navigate([''])
+
   }
 
 }

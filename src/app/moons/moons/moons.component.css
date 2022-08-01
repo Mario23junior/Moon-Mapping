@@ -21,7 +21,7 @@ table {
 
 .logo-planet {
   margin-bottom: -1rem;
-  margin-left: 1rem;
+  margin-left: -1px;
   margin-top: -19rem;
   flex-direction : row;
   max-height: 3rem;
