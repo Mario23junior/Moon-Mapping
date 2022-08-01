@@ -1,27 +1,53 @@
-# MoonsRegister
+<p align="center"><img src="logo.gif" width = "733px" height="733px"></p>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
+<h1 align="center">Moons Mapper API</h1>
 
-## Development server
+<h3 align="center">Esta API de satélites tem o objetivo de mapear  luas, satélites naturais são corpos celestes que possuem órbita atrelada a um planeta. Ou seja, enquanto os planetas orbitam em torno de uma estrela, os satélites naturais fazem o mesmo movimento só que em torno de um planeta.
+ <a href="https://www.iau2006.org/"usando como base organizacional um sistema de CRUD
+<p align="center">
+ 
+<a href="https://github.com/Mario23junior/Moons-mapper-API/actions/workflows/Maven.yml/badge.svg?branch=dev" target="_blank"> [![Build Status](https://github.com/Mario23junior/Moons-mapper-API/actions/workflows/Maven.yml/badge.svg?branch=dev)](https://github.com/Mario23junior/Moons-mapper-API)
+<a href="https://en.wikipedia.org/wiki/Representational_state_transfer"><img src="https://img.shields.io/badge/interface-REST-brightgreen.svg?longCache=true&style=flat-square" target="_blank"></a>
+</p>
+  
+## Primeiro execute o maven 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 🚀 Começando
 
-## Code scaffolding
+Algums parametros de ação são necessarios para a execução
+### 📋 Pré-requisitos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Você pode esta alterando o tamanho do print direto no codigo
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### 🔧 Instalação
 
-## Running unit tests
+Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Diga como essa etapa será:
 
-## Running end-to-end tests
+## Uso local
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+npm run start
+```
+## 🛠️ em seguida faça
+Execute `ng serve` para um servidor dev. Navegue até `http://localhost:4200/`. 
+O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
 
-## Further help
+## 🛠️ Construído com
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Execute `ng build` para compilar o projeto. Os artefatos de construção serão armazenados no diretório `dist/`.
+
+
+Mencione as ferramentas que você usou para criar seu projeto
+
+* [TypeScript](http://www.dropwizard.io/1.0.2/docs/)
+* [Linux](https://maven.apache.org/)
+* [Angular 14](https://spring.io/projects/spring-boot)
+* [Javascript](https://www.h2database.com/html/main.html)
+* [NodeJs](https://maven.apache.org/)
+ 
+## 📄 Licença
+
+Este projeto está sob a licença (GNU GPLv3) - [GNU GPLv3.md](https://www.gnu.org/licenses/gpl-3.0.pt-br.html)
