@@ -55,15 +55,15 @@ export class MoonsUpdateComponent implements OnInit {
     this.service.update(this.moons)
       .subscribe(result => this.onSuccess(this.form.value.name),
         error => this.onError());
-        this.location.back()
-  }
+        this.router.navigate([''])
+      }
 
   public onCancel() {
-    this.location.back()
+    this.router.navigate([''])
   }
 
   private onError() {
-    this.snackBar.open('Erro ao salvar informações de satelites naturais',
+    this.snackBar.open('Erro ao atualizar os dados de satelites naturais',
       '', {
       duration: 6000,
       verticalPosition: 'top',
@@ -73,12 +73,12 @@ export class MoonsUpdateComponent implements OnInit {
 
 
   private onSuccess(moonsName: Moon) {
-    this.snackBar.open(`O satelite natural ${moonsName} foi salvo com sucesso`,
+    this.snackBar.open(`O satelite natural ${moonsName} foi atualizado com sucesso`,
       '', {
       duration: 6000,
       verticalPosition: 'top',
       panelClass: ['success'],
     })
-    this.location.back()
+    this.router.navigate([''])
   }
 }
