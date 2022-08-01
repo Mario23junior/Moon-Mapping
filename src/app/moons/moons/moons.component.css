@@ -44,3 +44,8 @@ table {
   text-overflow: ellipsis;
   white-space: nowrap
 }
+
+.caracterText:hover {
+  text-overflow: clip;
+  max-width: none
+}
