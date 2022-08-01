@@ -28,15 +28,15 @@ export class MoonsDeleteComponent implements OnInit {
      this.service = service
     this.form = this.formBuild.group({
       _id: { value: null, disabled: true },
-      name: [''],
-      planetaMae: [''],
-      semieixoMaior: [],
-      pressaoAtmosferica: [''],
-      massa: [''],
-      periodoDeRotacao: [''],
-      periodoOrbital: [''],
-      inclinacao: [''],
-      velocidadeOrbitalMedia: ['']
+      name: {value:null ,disabled:true},
+      planetaMae: {value:null ,disabled:true},
+      semieixoMaior: {value:null ,disabled:true},
+      pressaoAtmosferica: {value:null ,disabled:true},
+      massa: {value:null ,disabled:true},
+      periodoDeRotacao: {value:null ,disabled:true},
+      periodoOrbital: {value:null ,disabled:true},
+      inclinacao: {value:null ,disabled:true},
+      velocidadeOrbitalMedia: {value:null ,disabled:true},
     })
   }
 
