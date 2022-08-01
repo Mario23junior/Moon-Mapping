@@ -40,23 +40,23 @@
             </mat-form-field>
 
             <mat-form-field class="full-width">
-                <input matInput [(ngModel)]="moons.massa" type="massa" placeholder="Massa do satelie natural" formControlName="massa">
+                <input matInput [(ngModel)]="moons.massa" placeholder="Massa do satelie natural" formControlName="massa">
             </mat-form-field>
 
             <mat-form-field class="full-width">
-                <input matInput  type="number"  [(ngModel)]="moons.periodoDeRotacao" placeholder="Seu periodo de rotação" formControlName="periodoDeRotacao">
+                <input matInput type="text" [(ngModel)]="moons.periodoDeRotacao" placeholder="Seu periodo de rotação" formControlName="periodoDeRotacao">
             </mat-form-field>
 
             <mat-form-field class="full-width">
-                <input matInput [(ngModel)]="moons.periodoOrbital" name="periodoOrbital" type="number" placeholder="Seu tempo de orbita" formControlName="periodoOrbital">
+                <input matInput [(ngModel)]="moons.periodoOrbital" name="periodoOrbital" placeholder="Seu tempo de orbita" formControlName="periodoOrbital">
             </mat-form-field>
 
             <mat-form-field class="full-width">
-                <input matInput [(ngModel)]="moons.inclinacao" name="inclinacao" type="number" placeholder="Posição das atividades" formControlName="inclinacao">
+                <input matInput [(ngModel)]="moons.inclinacao" name="inclinacao"  placeholder="Posição das atividades" formControlName="inclinacao">
             </mat-form-field>
 
             <mat-form-field class="full-width">
-                <input matInput [(ngModel)]="moons.velocidadeOrbitalMedia" name="velocidadeOrbitalMedia"type="number" placeholder="Velocidade de horbita"
+                <input matInput [(ngModel)]="moons.velocidadeOrbitalMedia" name="velocidadeOrbitalMedia" type="number" placeholder="Velocidade de horbita"
                     formControlName="velocidadeOrbitalMedia">
             </mat-form-field>
         </form>
