@@ -15,11 +15,11 @@
             </ng-container>
 
             <!-- Name Column -->
-            <ng-container  matColumnDef="planetaMae">
+            <ng-container matColumnDef="planetaMae">
                 <th mat-header-cell *matHeaderCellDef> Planeta orbital </th>
                 <td mat-cell *matCellDef="let element"> {{element.planetaMae}}
                     <img mat-cell class="logo-planet" src="assets/planets-icon/{{element.planetaMae | planets}}"
-                        alt="logo"/>
+                        alt="logo" />
                 </td>
             </ng-container>
 
@@ -80,7 +80,8 @@
                         <mat-icon>edit_box</mat-icon>
                     </button>
 
-                    <button class="btn" mat-raised-button color="warn" aria-label="Remover curso">
+                    <button class="btn" routerLink="moons-del/delete/{{element.id}}" mat-raised-button color="warn"
+                        aria-label="Remover curso">
                         <mat-icon>delete</mat-icon>
                     </button>
                 </mat-cell>

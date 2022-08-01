@@ -1,4 +1,3 @@
-import { Location } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
@@ -7,30 +6,28 @@ import { Moon } from '../models/moon';
 import { MoonsService } from '../services/moons.service';
 
 @Component({
-  selector: 'app-moons-update',
-  templateUrl: './moons-update.component.html',
-  styleUrls: ['./moons-update.component.css']
+  selector: 'app-moons-delete',
+  templateUrl: './moons-delete.component.html',
+  styleUrls: ['./moons-delete.component.css']
 })
-export class MoonsUpdateComponent implements OnInit {
+export class MoonsDeleteComponent implements OnInit {
 
   public form: FormGroup
   public router: Router
   public service: MoonsService
   private snackBar: MatSnackBar
-  private location: Location
-  private route: ActivatedRoute
+   private route: ActivatedRoute
   public moons: any = [] = []
 
   constructor(public formBuild: FormBuilder, router: Router,
-    service: MoonsService,snackBar: MatSnackBar, location: Location, route: ActivatedRoute) {
+    service: MoonsService, snackBar: MatSnackBar, route: ActivatedRoute) {
 
     this.router = router
     this.route = route
     this.snackBar = snackBar
-    this.location = location
-    this.service = service
+     this.service = service
     this.form = this.formBuild.group({
-      _id: { value:null, disabled:true},
+      _id: { value: null, disabled: true },
       name: [''],
       planetaMae: [''],
       semieixoMaior: [],
@@ -51,19 +48,18 @@ export class MoonsUpdateComponent implements OnInit {
     })
   }
 
-  public onUpdate() {
-    this.service.update(this.moons)
-      .subscribe(result => this.onSuccess(this.form.value.name),
+  public onDelete() {
+    this.service.delete(this.moons.id)
+      .subscribe(result => this.onSuccess(this.moons.name),
         error => this.onError());
-        this.location.back()
   }
 
   public onCancel() {
-    this.location.back()
+    this.router.navigate([''])
   }
 
   private onError() {
-    this.snackBar.open('Erro ao salvar informações de satelites naturais',
+    this.snackBar.open('Erro ao atualizar informações de satelites naturais',
       '', {
       duration: 6000,
       verticalPosition: 'top',
@@ -73,12 +69,14 @@ export class MoonsUpdateComponent implements OnInit {
 
 
   private onSuccess(moonsName: Moon) {
-    this.snackBar.open(`O satelite natural ${moonsName} foi salvo com sucesso`,
+    this.snackBar.open(`O satelite natural ${moonsName} foi deletado com sucesso`,
       '', {
       duration: 6000,
       verticalPosition: 'top',
       panelClass: ['success'],
     })
-    this.location.back()
+    this.router.navigate([''])
+
   }
+
 }

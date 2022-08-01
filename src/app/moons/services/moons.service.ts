@@ -32,6 +32,11 @@ export class MoonsService {
       )
   }
 
+  delete(id: string): Observable<Moon> {
+    const url = `${this.API}/${id}`
+    return this.httpClient.delete<Moon>(url)
+  }
+
   readById(id:any): Observable<Moon> {
     const urlId = `${this.API}/${id}`
     return this.httpClient.get<Moon>(urlId)
@@ -40,6 +45,5 @@ export class MoonsService {
   update(moonsId: Moon): Observable<Moon> {
      const url = `${this.API}/${moonsId.id}`
      return this.httpClient.put<Moon>(url,moonsId)
-
    }
 }

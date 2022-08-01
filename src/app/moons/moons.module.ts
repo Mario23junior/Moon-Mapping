@@ -20,8 +20,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MoonsUpdateComponent } from './moons-update/moons-update.component';
 import { MatGridListModule } from '@angular/material/grid-list';
-
-
+import { MoonsDeleteComponent } from './moons-delete/moons-delete.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
     ErrorDialogComponent,
     PlanetsPipe,
     MoonsFormComponent,
-    MoonsUpdateComponent
+    MoonsUpdateComponent,
+    MoonsDeleteComponent
   ],
   imports: [
     CommonModule,
