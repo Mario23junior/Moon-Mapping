@@ -47,3 +47,9 @@ mat-card {
   margin: 0 32px;
 }
 
+.text-color{
+  max-width: 190px; /* Tamanho */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}

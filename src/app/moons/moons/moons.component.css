@@ -37,4 +37,10 @@ table {
   background-color: rgb(238, 234, 20);
 }
 
- 
+.caracterText {
+  max-width: 60px;
+  overflow: hidden;
+  margin: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
