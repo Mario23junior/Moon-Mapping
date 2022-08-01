@@ -1,0 +1,102 @@
+<mat-card class="min-width">
+    <mat-toolbar routerLink="/moons" class="header-color" class="min-width" class="header mat-elevation-z4">
+        <a>
+            <img class="logo-secundary" (click)="fontRaiz()" src="assets/logo-secundary.png" alt="logo">
+        </a>
+        <span>Satélites naturais</span>
+    </mat-toolbar>
+
+    <div *ngIf="moons$ | async as moons; else loading ">
+        <table mat-table [dataSource]="moons" class="mat-elevation-z8">
+            <!-- Position Column -->
+            <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef> Lua </th>
+                <td mat-cell class="caracterText" *matCellDef="let element"> {{element.name}} </td>
+            </ng-container>
+
+            <!-- Name Column -->
+            <ng-container matColumnDef="planetaMae">
+                <th mat-header-cell *matHeaderCellDef> Planeta orbital </th>
+                <td mat-cell  class="caracterText" *matCellDef="let element"> {{element.planetaMae}}
+                    <img mat-cell class="logo-planet" src="assets/planets-icon/{{element.planetaMae | planets}}"
+                        alt="logo" />
+                </td>
+            </ng-container>
+
+            <!-- Weight Column -->
+            <ng-container matColumnDef="semieixoMaior">
+                <th mat-header-cell *matHeaderCellDef> Semieixo maior</th>
+                <td mat-cell  class="caracterText" *matCellDef="let element"> {{element.semieixoMaior}} km</td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="pressaoAtmosferica">
+                <th mat-header-cell *matHeaderCellDef> Pressao atmosferica </th>
+                <td mat-cell  class="caracterText" *matCellDef="let element"> {{element.pressaoAtmosferica}} </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="massa">
+                <th mat-header-cell *matHeaderCellDef> Massa </th>
+                <td mat-cell  class="caracterText" *matCellDef="let element"> {{element.massa}} kg</td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="periodoDeRotacao">
+                <th mat-header-cell *matHeaderCellDef> Periodo de rotacao </th>
+                <td mat-cell  class="caracterText" *matCellDef="let element"> {{element.periodoDeRotacao}} </td>
+            </ng-container>
+
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="periodoOrbital">
+                <th mat-header-cell *matHeaderCellDef> Periodo orbital </th>
+                <td mat-cell  class="caracterText" *matCellDef="let element"> {{element.periodoOrbital}} </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="inclinacao">
+                <th mat-header-cell *matHeaderCellDef> Inclinação </th>
+                <td mat-cell  class="caracterText" *matCellDef="let element"> {{element.inclinacao}} </td>
+            </ng-container>
+
+            <!-- Symbol Column -->
+            <ng-container matColumnDef="velocidadeOrbitalMedia">
+                <th mat-header-cell *matHeaderCellDef> velocidade orbital média </th>
+                <td mat-cell  class="caracterText" *matCellDef="let element"> {{element.velocidadeOrbitalMedia}} km/s</td>
+            </ng-container>
+
+            <ng-container matColumnDef="actions">
+                <mat-header-cell *matHeaderCellDef>
+                    <button class="btn-add" mat-raised-button>
+                        <mat-icon (click)="onAdd()">add_box</mat-icon>
+                    </button>
+                </mat-header-cell>
+
+
+                <mat-cell *matCellDef="let element">
+                    <button class="btn" routerLink="/moons-edit/update/{{ element.id }}" mat-raised-button
+                        class="btn-edit" color="primary" aria-label="Editar satelite natural">
+                        <mat-icon>edit_box</mat-icon>
+                    </button>
+
+                    <button class="btn" routerLink="moons-del/delete/{{element.id}}" mat-raised-button color="warn"
+                        aria-label="Remover curso">
+                        <mat-icon>delete</mat-icon>
+                    </button>
+                </mat-cell>
+
+            </ng-container>
+
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+        </table>
+    </div>
+
+    <ng-template #loading>
+        <div class="loadin-spiner">
+            <mat-spinner></mat-spinner>
+        </div>
+    </ng-template>
+
+</mat-card>

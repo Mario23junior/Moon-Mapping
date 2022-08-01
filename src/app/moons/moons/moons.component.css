@@ -1,0 +1,51 @@
+mat-toolbar {
+  background-color: #979595;
+}
+
+.logo-secundary {
+  max-height: 70px;
+  margin-bottom: auto;
+}
+
+table {
+  width: 100%;
+}
+
+.loadin-spiner {
+  padding: 20px;
+  background-color: rgb(117, 117, 117);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-planet {
+  margin-bottom: -1rem;
+  margin-left: -1px;
+  margin-top: -19rem;
+  flex-direction : row;
+  max-height: 3rem;
+  }
+
+.btn-add {
+  margin: 8px 8px 8px 0;
+  background-color: rgb(0, 255, 64);
+}
+
+.btn-edit {
+  margin: 8px 8px 8px 0;
+  background-color: rgb(238, 234, 20);
+}
+
+.caracterText {
+  max-width: 40px;
+  overflow: hidden;
+  margin: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+.caracterText:hover {
+  text-overflow: clip;
+  max-width: none
+}
