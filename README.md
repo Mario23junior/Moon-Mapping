@@ -1,4 +1,4 @@
-<p align="center"><img src="/logo/logo-1.png" width="800px" height="460px"></p>
+<p align="center"><img src="/logo/logo-1.png" width="800px" height="430px"></p>
 
 <h1 align="center">Moons mapper resgister system</h1>
 
