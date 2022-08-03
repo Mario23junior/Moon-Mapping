@@ -1,4 +1,4 @@
-<mat-card class="card">
+<mat-card class="card"  class="header mat-elevation-z7">
     <mat-card-subtitle>Planeta</mat-card-subtitle>
     <mat-card-title>{{moons.planetaMae}}</mat-card-title>
     <div class="">
@@ -22,6 +22,6 @@
     <p>
 
         <mat-card-actions>
-            <button mat-raised-button color="warn" (click)="fechar()">fechar</button>
+            <button mat-stroked-button (click)="fechar()" color="warn">X</button>
         </mat-card-actions>
 </mat-card>

@@ -1,4 +1,9 @@
 <mat-card class="min-width">
+    <mat-form-field appearance="standard">
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilterMoons($event)" placeholder="Ex. ium" #input>
+      </mat-form-field>
+
     <mat-toolbar routerLink="/moons" class="header-color" class="min-width" class="header mat-elevation-z4">
         <a>
             <img class="logo-secundary" (click)="fontRaiz()" src="assets/logo-secundary.png" alt="logo">

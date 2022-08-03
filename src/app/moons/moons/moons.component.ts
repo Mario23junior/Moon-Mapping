@@ -61,4 +61,8 @@ export class MoonsComponent implements OnInit {
      })
    }
 
+   public applyFilterMoons(event: Event) {
+    const filterValue = (event.target as HTMLInputElement).value;
+    // this.displayedColumns.filter = filterValue.trim().toLowerCase();
+  }
 }
