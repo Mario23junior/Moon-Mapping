@@ -1,0 +1,20 @@
+.mat-sort-header-container {
+  align-items: center;
+}
+
+.logo-planet {
+  margin-bottom: -3rem;
+  margin-left: 199px;
+  margin-top: -19rem;
+  flex-direction : row;
+  max-height: 10rem;
+}
+
+img{
+  width: 7rem;
+  height: auto;  
+}
+.card{
+  width: 20rem;
+  height: auto;
+}

@@ -23,7 +23,8 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MoonsDeleteComponent } from './moons-delete/moons-delete.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MoonsDetailsComponent } from './moons-details/moons-details.component';
-
+import { MatSortModule } from '@angular/material/sort';
+ 
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { MoonsDetailsComponent } from './moons-details/moons-details.component';
     MatSelectModule,
     MatSnackBarModule,
     MatGridListModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSortModule 
   ]
 })
 export class MoonsModule { }

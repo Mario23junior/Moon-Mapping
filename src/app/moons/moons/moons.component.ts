@@ -57,9 +57,7 @@ export class MoonsComponent implements OnInit {
 
    public showDetails(moons: Moon) {
      this.dialog.open(MoonsDetailsComponent, {
-       width: '600px',
-       height: '450px',
-       data: moons
+         data: moons
      })
    }
 
