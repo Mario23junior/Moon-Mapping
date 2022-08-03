@@ -4,6 +4,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { catchError, Observable, of } from 'rxjs';
 import { ErrorDialogComponent } from '../error-dialog/error-dialog.component';
 import { Moon } from '../models/moon';
+import { MoonsDetailsComponent } from '../moons-details/moons-details.component';
 import { MoonsService } from '../services/moons.service';
 
 @Component({
@@ -53,5 +54,13 @@ export class MoonsComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+   public showDetails(moons: Moon) {
+     this.dialog.open(MoonsDetailsComponent, {
+       width: '600px',
+       height: '450px',
+       data: moons
+     })
+   }
 
 }

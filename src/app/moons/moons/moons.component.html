@@ -18,7 +18,7 @@
             <ng-container matColumnDef="planetaMae">
                 <th mat-header-cell *matHeaderCellDef> Planeta orbital </th>
                 <td mat-cell  class="caracterText" *matCellDef="let element"> {{element.planetaMae}}
-                    <img mat-cell class="logo-planet" src="assets/planets-icon/{{element.planetaMae | planets}}"
+                    <img mat-cell class="logo-planet" (click)="showDetails(element)" src="assets/planets-icon/{{element.planetaMae | planets}}"
                         alt="logo" />
                 </td>
             </ng-container>
