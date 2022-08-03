@@ -21,6 +21,9 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MoonsUpdateComponent } from './moons-update/moons-update.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MoonsDeleteComponent } from './moons-delete/moons-delete.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MoonsDetailsComponent } from './moons-details/moons-details.component';
+
 
 @NgModule({
   declarations: [
@@ -29,7 +32,8 @@ import { MoonsDeleteComponent } from './moons-delete/moons-delete.component';
     PlanetsPipe,
     MoonsFormComponent,
     MoonsUpdateComponent,
-    MoonsDeleteComponent
+    MoonsDeleteComponent,
+    MoonsDetailsComponent
   ],
   imports: [
     CommonModule,
@@ -46,7 +50,8 @@ import { MoonsDeleteComponent } from './moons-delete/moons-delete.component';
     MatInputModule,
     MatSelectModule,
     MatSnackBarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatPaginatorModule
   ]
 })
 export class MoonsModule { }

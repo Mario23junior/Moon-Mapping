@@ -1,0 +1,19 @@
+<mat-card style="text-align: center;">
+    <mat-card-header>
+        <mat-card-title>
+            <mat-icon class="mat-18">
+                face
+            </mat-icon>
+        </mat-card-title>
+         <img mat-cell class="logo-planet" src="assets/planets-icon/{{moons.planetaMae| planets}}">
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+           <strong>{{moons.name}}</strong>
+           <strong>{{moons.planetaMae}}</strong>
+        </p>
+        <mat-card-actions>
+            <button mat-raised-button color="warn" (click)="fechar()">fechar</button>
+        </mat-card-actions>
+    </mat-card-content>
+</mat-card>
