@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatTableDataSource } from '@angular/material/table';
 import { ActivatedRoute, Router } from '@angular/router';
 import { catchError, Observable, of } from 'rxjs';
 import { ErrorDialogComponent } from '../error-dialog/error-dialog.component';
@@ -37,6 +38,8 @@ export class MoonsComponent implements OnInit {
         })
       )
   }
+  ngOnInit(): void {
+  }
 
   public onAdd() {
     this.router.navigate(['moons-add'], { relativeTo: this.route })
@@ -52,17 +55,16 @@ export class MoonsComponent implements OnInit {
     this.router.navigate([''])
   }
 
-  ngOnInit(): void {
+
+  public showDetails(moons: Moon) {
+    this.dialog.open(MoonsDetailsComponent, {
+      data: moons
+    })
   }
 
-   public showDetails(moons: Moon) {
-     this.dialog.open(MoonsDetailsComponent, {
-         data: moons
-     })
-   }
 
-   public applyFilterMoons(event: Event) {
+
+  public applyFilterMoons(event: Event) {
     const filterValue = (event.target as HTMLInputElement).value;
-    // this.displayedColumns.filter = filterValue.trim().toLowerCase();
-  }
+   }
 }
