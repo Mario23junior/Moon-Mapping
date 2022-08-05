@@ -1,0 +1,27 @@
+<mat-card class="card"  class="header mat-elevation-z7">
+    <mat-card-subtitle>Planeta</mat-card-subtitle>
+    <mat-card-title>{{moons.planetaMae}}</mat-card-title>
+    <div class="">
+        <img class="logo-planet" src="assets/planets-icon/{{moons.planetaMae| planets}}">
+    </div>
+    <p>Satelite natural : {{moons.name}}
+    <p>
+    <p>Semieixo Maior : {{moons.semieixoMaior}}
+    <p>
+    <p>Pressão Atmosferica : {{moons.pressaoAtmosferica}}
+    <p>
+    <p>Massa do satelite natural : {{moons.massa}}
+    <p>
+    <p>Periodo de rotação : {{moons.periodoDeRotacao}}
+    <p>
+    <p>Periodo orbital : {{moons.periodoOrbital}}
+    <p>
+    <p>Inclinação : {{moons.inclinacao}}
+    <p>
+    <p>Velocidade orbital media : {{moons.velocidadeOrbitalMedia}}
+    <p>
+
+        <mat-card-actions>
+            <button mat-stroked-button (click)="fechar()" color="warn">X</button>
+        </mat-card-actions>
+</mat-card>

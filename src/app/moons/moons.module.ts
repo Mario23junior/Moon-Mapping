@@ -13,7 +13,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { PlanetsPipe } from './pipes/planets.pipe';
 import { MoonsFormComponent } from './moons-form/moons-form.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -21,6 +21,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MoonsUpdateComponent } from './moons-update/moons-update.component';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MoonsDeleteComponent } from './moons-delete/moons-delete.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MoonsDetailsComponent } from './moons-details/moons-details.component';
+import { MatSortModule } from '@angular/material/sort';
+ 
 
 @NgModule({
   declarations: [
@@ -29,7 +33,8 @@ import { MoonsDeleteComponent } from './moons-delete/moons-delete.component';
     PlanetsPipe,
     MoonsFormComponent,
     MoonsUpdateComponent,
-    MoonsDeleteComponent
+    MoonsDeleteComponent,
+    MoonsDetailsComponent
   ],
   imports: [
     CommonModule,
@@ -46,7 +51,11 @@ import { MoonsDeleteComponent } from './moons-delete/moons-delete.component';
     MatInputModule,
     MatSelectModule,
     MatSnackBarModule,
-    MatGridListModule
+    MatGridListModule,
+    MatPaginatorModule,
+    MatSortModule,
+    FormsModule
+
   ]
 })
 export class MoonsModule { }

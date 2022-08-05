@@ -9,5 +9,6 @@ export interface Moon {
     periodoOrbital: String,
     inclinacao: string,
     velocidadeOrbitalMedia: number
+ 
 
 }

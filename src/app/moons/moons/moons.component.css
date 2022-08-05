@@ -37,15 +37,9 @@ table {
   background-color: rgb(238, 234, 20);
 }
 
-.caracterText {
-  max-width: 40px;
-  overflow: hidden;
-  margin: auto;
-  text-overflow: ellipsis;
-  white-space: nowrap
-}
+.mat-form-field {
 
-.caracterText:hover {
-  text-overflow: clip;
-  max-width: none
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
