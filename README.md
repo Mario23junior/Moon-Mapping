@@ -10,8 +10,7 @@
 <a href="https://en.wikipedia.org/wiki/Representational_state_transfer"><img src="https://img.shields.io/badge/interface-REST-brightgreen.svg?longCache=true&style=flat-square" target="_blank"></a>
 </p>
   
-## Primeiro execute o maven 
-
+ 
 ## 🚀 Começando
 
 Algums parametros de ação são necessarios para a execução
